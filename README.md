@@ -15,3 +15,8 @@ These are the set of scripts that were used to analyze the 3P-Seq data reported 
     * <a href="http://www.numpy.org/">numpy</a>
 
 ###Following are the step-by-step guide to follow for analysis of 3P-Seq data
+> Step 1: Pre-processing of the raw fastq file to select the reads arising from 3' end of the transcripts.
+<code>
+./3Pseq_iniprocess.py
+usage: 3Pseq_iniprocess.py [-h] -q FASTQ [-g GENOME] [-c CONFIG] [-o OUTPUT]
+</code>
