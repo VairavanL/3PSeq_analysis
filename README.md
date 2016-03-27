@@ -54,17 +54,15 @@ Usage: ./detect_peaks \<bedcount_file\> \<readcut-off\>
 </code><br/>
 
 Please ensure that input bedcount file for the script is in the following format:
-<code>
 Contig22218     -       6342    6390    1       48 <br/>
 Contig22218     -       9626    9675    5451    49 <br/>
-Contig22218     -       9627    9676    55      4 9/<>
-Contig22218     -       9629    9677    42      48<br/>
+Contig22218     -       9627    9676    55   48  < br/>
+Contig22218     -       9629    9677    42       4 8   <br/>
 Contig22218     -       9630    9676    13      46<br/>
 Contig22218     -       9649    9698    1       49<br/>
 Contig4549      -       41328   41373   20      45<br/>
 Contig4549      -       41489   41536   71      47<br/>
 Contig4549      -       41492   41541   205     49<br/>
 Contig4549      -       41493   41542   140     49<br/>
-</code>
 
 
