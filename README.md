@@ -1,7 +1,8 @@
+# Analysis of 3P-Seq data
+
 <p align="center">
-<img src="https://github.com/VairavanL/3PSeq_analysis/blob/master/3P_Header.gif" width="325px" />
+<img src="https://github.com/VairavanL/3PSeq_analysis/blob/master/3P_Header.gif"/>
 </p>
-# 3PSeq_analysis
 These are the set of scripts that were used to analyze the 3P-Seq data reported in '***Genome-wide analysis of polyadenylation events in <i>Schmidtea mediterranea</i>***'. Before you run these scripts, please ensure that following dependencies are met:
 
 * Dependencies
