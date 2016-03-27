@@ -1,5 +1,5 @@
 <p align="center">
-![3P-Seq](https://github.com/VairavanL/3PSeq_analysis/blob/master/3P_Header.gif "PolyA position profiling by sequencing")
+<img src="https://github.com/VairavanL/3PSeq_analysis/blob/master/3P_Header.gif" width="325px" />
 </p>
 # 3PSeq_analysis
 These are the set of scripts that were used to analyze the 3P-Seq data reported in '***Genome-wide analysis of polyadenylation events in <i>Schmidtea mediterranea</i>***'. Before you run these scripts, please ensure that following dependencies are met:
