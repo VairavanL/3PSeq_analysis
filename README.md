@@ -54,7 +54,7 @@ optional arguments: <br/>
 <code>
 Usage: ./detect_peaks \<bedcount_file\> \<readcut-off\>
 </code><br/>
-
+Read cut-off -> Minimum number of reads that each nucleotide base should be spanned by.
 Please ensure that input bedcount file for the script is in the following format:
 
 First column - Contig/Chromosome name <br/>
@@ -76,6 +76,14 @@ Contig4549      -       41489   41536   71      47
 Contig4549      -       41492   41541   205     49
 Contig4549      -       41493   41542   140     49
 ```
+
+> Step 4: Detecting the enriched hexameric nucleotide sequence in the 3P-Peak.<br/>
+  * The peak sequences can be derived from the output of the previous script. <br/>
+  * This scripts will scan through all the peak sequences to search for the conserved hexameric signal using a window-frame approach.<br/>
+  * The statistal significance of each hexameric sequence along with its position on the 3P-Peak will be calculated.
+<code>
+Usage:./hexamer_logic.py \<fastafile\> \<seed\>"
+</code>
 
 
 
