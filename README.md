@@ -76,14 +76,23 @@ Contig4549      -       41489   41536   71      47
 Contig4549      -       41492   41541   205     49
 Contig4549      -       41493   41542   140     49
 ```
-
+- - - -
 > Step 4: Detecting the enriched hexameric nucleotide sequence in the 3P-Peak.<br/>
   * The peak sequences can be derived from the output of the previous script. <br/>
   * This scripts will scan through all the peak sequences to search for the conserved hexameric signal using a window-frame approach.<br/>
   * The statistal significance of each hexameric sequence along with its position on the 3P-Peak will be calculated.
 <code>
-Usage:./hexamer_logic.py \<fastafile\> \<seed\>"
+Usage:./hexamer_logic.py \<fastafile\> \<seed\> <br/>
+fastafile - The fasta file containing all the 3P-Peak sequences.<br/>
+seed - The seed number that will be used for randomization.<br/>
 </code>
 
+- - - -
+
+> Step 5: Determining the secondary hexameric PAS signals from the 3P-Peaks <br/>
+  * The secondary hexameric PAS signal will be determined from the 3P-Peaks sequences. Fischers test of independence will be used for detecting these signals.<br>
+<code>
+Usage: ./fischers_test.py \<peak_fasta_file\>  
+</code>
 
 
