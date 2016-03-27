@@ -30,6 +30,8 @@ optional arguments: <br/>
 -c CONFIG, --config CONFIG -> Configuration file <br/>
 -o OUTPUT, --output OUTPUT -> Output directory to store the results <br/>
 
+- - - -
+
 > Step 2: Aligning the processed raw FASTQ file to the genome
 
 
