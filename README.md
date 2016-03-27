@@ -6,6 +6,6 @@ These are the set of scripts that were used to analyze the 3P-Seq data reported 
   * Bedtools (http://bedtools.readthedocs.org/en/latest/)
   * Samtools (http://samtools.sourceforge.net/)
   * Following python packages:
-   * joblib (https://pypi.python.org/pypi/joblib)
-   * scipy (http://www.scipy.org/)
-   * numpy (http://www.numpy.org/)
+    * joblib (https://pypi.python.org/pypi/joblib)
+    * scipy (http://www.scipy.org/)
+    * numpy (http://www.numpy.org/)
