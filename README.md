@@ -64,7 +64,18 @@ Fourth column - Alignment end <br/>
 Fifth column - Read count <br/>
 Sixt column - The lenght of the range #Not required <br/>
 
-
+```javascript
+Contig22218     -       6342    6390    1       48
+Contig22218     -       9626    9675    5451    49
+Contig22218     -       9627    9676    55      49
+Contig22218     -       9629    9677    42      48
+Contig22218     -       9630    9676    13      46
+Contig22218     -       9649    9698    1       49
+Contig4549      -       41328   41373   20      45
+Contig4549      -       41489   41536   71      47
+Contig4549      -       41492   41541   205     49
+Contig4549      -       41493   41542   140     49
+```
 
 
 
