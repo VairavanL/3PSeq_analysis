@@ -19,10 +19,10 @@ These are the set of scripts that were used to analyze the 3P-Seq data reported 
   * Getting the reverse complement of reads
   * Trimming the terminal polyA to retain only two A's in the end (or begining)
   * Excluding those reads that contains N (undefined nucleotide) within them
-  * Filtering out the sequences that are less than 20 nucleotides in length
+  * Filtering out the sequences that are less than 20 nucleotides in length <br/>
 <code> ./3Pseq_iniprocess.py -h </code><br/>
 <code>usage: 3Pseq_iniprocess.py [-h] -q FASTQ [-g GENOME] [-c CONFIG] [-o OUTPUT] </code><br/>
-Script is a wrapper for 3P-Seq pipeline <br/>
+Script performs the initial processing <br/>
 optional arguments: <br/>
 -h, --help -> show this help message and exit <br/>
 -q FASTQ, --fastq FASTQ ->  RAW FASTQ file of the reads <br/>
@@ -32,7 +32,21 @@ optional arguments: <br/>
 
 - - - -
 
-> Step 2: Aligning the processed raw FASTQ file to the genome
+> Step 2: Aligning the processed raw FASTQ file to the genome. The script performs the following actions:
+  * Aligning the reads to the genome using <a href="http://bowtie-bio.sourceforge.net/index.shtml" target="_blank">bowtie</a>.</br>
+  * Filtering out the alignment to retain those reads that contain the 'A' mismatch either at the end or the beginning (This would ensure it is the untemplated 'A' that was added during the process of cleavage/polyadenylation.)<br/>
+  * Give the bed output of the alignment which will later be used for deriving the 3P-Peaks
+<code> ./alignment_trigger.py -h</code><br/>
+<code>usage: alignment_trigger.py [-h] [-q FASTQ] -g GENOME -c CONFIG [-o OUTPUT]</code><br/>
+
+Script perfoms the alignment and filtering <br/>
+optional arguments: <br/>
+-h, --help -> show this help message and exit <br/>
+-q FASTQ, --fastq  -> FASTQ Processed FASTQ file of the reads [output from 3Pseq_iniprocess.py] </br>
+-g GENOME, --genome GENOME -> Path to the bowtie genome index file </br>
+-c CONFIG, --config CONFIG -> Configuration file </br>
+-o OUTPUT, --output OUTPUT -> Output directory to store the results </br>
+
 
 
 
