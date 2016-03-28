@@ -14,7 +14,7 @@ These are the set of scripts that were used to analyze the 3P-Seq data reported 
     * <a href="http://www.scipy.org/">scipy</a>
     * <a href="http://www.numpy.org/">numpy</a>
 
-###Following is the step-by-step guide to follow for analysis of 3P-Seq data using these scripts :
+###Following is the step-by-step guide for analysis of 3P-Seq data using these scripts :
 > Step 1: Pre-processing of the raw fastq file to select the reads arising from 3' end of the transcripts. Following are the processing steps:<br/>
   * Getting the reverse complement of reads
   * Trimming the terminal polyA to retain only two A's in the end (or begining)
